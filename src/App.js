@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Hero2 from './components/Hero2'
 import HeadlineCards from './components/HeadlineCards';
 // import Robots from './components/Robots';
 import Category from './components/Category';
@@ -10,6 +11,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CheckOutPage from './components/Pages/CheckOutPage';
 import OrdersPage from './components/Pages/Orders';
 import PrivacyPolicy from './components/Pages/PrivacyPolicy';
+import Engagement from './components/Engagement'
 // import ChatBot from './components/Chatbot';
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<React.Fragment> {/* Use React.Fragment or <></> */}
-            <Hero />
+            {/* <Hero /> */}
+            <Hero2 />
+            <Engagement />
             <HeadlineCards />
             {/* <Robots /> */}
             <Category />

@@ -77,21 +77,16 @@ const Navbar = () => {
   return (
     <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
       {/* Left side */}
-      <div className="flex items-center">
-        <div
-          onClick={() => setNav(!nav)}
-          className="cursor-pointer"
-        >
-          <AiOutlineMenu size={30} />
-        </div>
+      <div className="flex text-[#84BD00] items-center">
+       
         <img src={PMTsiteLogo} alt="PMTsiteLogo" />
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2">
+        {/* <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2">
           Cyber<span className="font-bold">Mart</span>
         </h1>
         <div className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]">
           <p className="bg-black text-white rounded-full p-2">Delivery</p>
           <p className="p-2">Pickup</p>
-        </div>
+        </div> */}
       </div>
 
       {/* Search Input */}
@@ -107,8 +102,18 @@ const Navbar = () => {
           onKeyDown={handleKeyPress}
         /> */}
       </div>
+<div className='flex justify-center items-center space-x-16 pr-4'>
+      <button className="bg-[#001489] text-white font-bold text-2xl hidden md:flex items-center py-2 px-4 justify-center rounded-full"
+        > Contact Us </button>   
+        
+        <div
+          onClick={() => setNav(!nav)}
+          className="cursor-pointer"
+        >
+          <AiOutlineMenu size={30} />
+        </div></div>
 
-      {/* Cart button */}
+           {/* Cart button */}
       {/* <button className="bg-black text-white hidden md:flex items-center py-2 rounded-full"
        onClick={handleToggleCart} >
         <BsFillCartFill size={20} className="ar-2" /> Cart

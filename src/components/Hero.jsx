@@ -14,7 +14,7 @@ import robot1 from '../images/ryanh5800_robots_making_a_deal_candid_realistic_4k
 
 const Hero = () => {
     return (
-        <div className="max-w-[1640px] mx-auto p-4">
+        <div className="w-full mx-auto p-4">
             <div className='max-h-[500px] relative'>
                 {/* overlay */}
                 <div className='absolute w-full h-full text-gray-200 max-h-[500px] bg-black/40 flex flex-col justify-center'>

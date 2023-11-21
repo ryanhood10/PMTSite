@@ -1,7 +1,7 @@
 import React from 'react';
-import robot2 from '../images/ryanh5800_robot_current_day_bd7addf9-7568-48cf-b261-27977247aeb6.png';
-import robot3 from '../images/ryanh5800_robot_current_day_9e083e76-b13d-4a6c-b01e-a6199c16fb10.png';
-import react1 from '../images/ryanh5800_React_icon_programming_68468fde-6f40-4320-8555-184738340d8c.png';
+import stock1 from '../PMTphotos/subcontractorStock-transformed.png'
+import stock2 from '../PMTphotos/subcontractStock2-transformed.jpeg'
+import stock3 from '../PMTphotos/subcontractorStock3.jpeg'
 import { useNavigate } from 'react-router-dom';
 
 
@@ -33,7 +33,7 @@ const HeadlineCards = () => {
           <p className='px-2'>Testimonials</p>
           <button href='/Testimonials' className='border-white bg-white text-black mx-2 absolute bottom-4' onClick={handleViewTestimonials}>View Now</button>
         </div>
-        <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src={robot2} alt='robot2' />
+        <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src={stock1} alt='robot2' />
       </div>
 
       {/* Card 2 */}
@@ -44,7 +44,7 @@ const HeadlineCards = () => {
           <p className='px-2'>Great Prices</p>
           <button onClick={scrollToRobots} className='border-white bg-white text-black mx-2 absolute bottom-4'>Order Now</button>
         </div>
-        <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src={robot3} alt='robot2' />
+        <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src={stock2} alt='robot2' />
       </div>
 
       {/* Card 3 */}
@@ -55,7 +55,7 @@ const HeadlineCards = () => {
           <p className='px-2'>For Functional Robots</p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Order Now</button>
         </div>
-        <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src={react1} alt='robot2' />
+        <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src={stock3} alt='robot2' />
       </div>
     </div>
   );

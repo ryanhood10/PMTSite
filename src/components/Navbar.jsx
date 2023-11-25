@@ -153,7 +153,7 @@ const Navbar = () => {
           className="absolute right-4 top-4 cursor-pointer"
         />
         <h2 className="text-2xl p-4 ">
-          Best <span className="font-bold"> Robots</span>
+          PMT <span className="font-bold"> Site</span>
         </h2>
         <nav>
           <ul className="flex flex-col p-4 text-gray-800">
@@ -165,15 +165,15 @@ const Navbar = () => {
 
                 <li className="text-xl py-4 flex">
                     <Link to="/orders" className="flex items-center">
-                      <TbTruckDelivery size={25} className="mr-4" /> Orders
+                      <TbTruckDelivery size={25} className="mr-4" /> Services
                     </Link>
                   </li>
 
-            <li className="text-xl py-4 flex">
+            {/* <li className="text-xl py-4 flex">
             <Link to="/favorites" className="flex items-center">
               <MdFavorite size={25} className="mr-4" /> Favorites{' '}
               </ Link>
-            </li>
+            </li> */}
             {/* <li className="text-xl py-4 flex">
               {' '}
               <FaWallet size={25} className="mr-4" /> Wallet{' '}
@@ -196,7 +196,7 @@ const Navbar = () => {
             </li> */}
             
             <li className="text-xl py-4 flex flex-col">
-      <span className="mb-2">Invite Friends:</span>
+      <span className="mb-2">Share PMT site on your social:</span>
       <div className="flex space-x-2">
         {/* Facebook Share */}
         <FacebookShareButton url={currentUrl}>

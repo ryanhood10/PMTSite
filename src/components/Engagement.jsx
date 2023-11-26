@@ -90,7 +90,9 @@ const DumpsterRentalCompany = () => {
                     <div className="flex space-y-2">
                         <img className="w-full rounded-3xl" src={NashMap} alt="Dumpster" />
                     </div>
-                    <h4 className="text-center md:text-xl sm:text-xl text-xl justify-center font-semibold">PMT Subcontracting: Providing exceptional subcontracting services to the greater Nashville area, built on trust, integrity, and a commitment to quality.</h4>
+                    <h4 className="py-2 text-center md:text-xl sm:text-xl text-xl justify-center font-semibold">
+                      <span className="text-[#84BD00]">PMT Subcontracting:  </span>
+                     Providing exceptional subcontracting services to the greater Nashville area, built on trust, integrity, and a commitment to quality.</h4>
 
                 </div>
 

@@ -11,7 +11,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CheckOutPage from './components/Pages/CheckOutPage';
 import OrdersPage from './components/Pages/Orders';
 import PrivacyPolicy from './components/Pages/PrivacyPolicy';
-import Engagement from './components/Engagement'
+import Engagement from './components/Engagement';
+import Footer from './components/Footer';
 // import ChatBot from './components/Chatbot';
 
 function App() {
@@ -26,12 +27,14 @@ function App() {
             <Engagement />
             <HeadlineCards />
             {/* <Robots /> */}
-            <Category />
+            {/* <Category /> */}
+            {/* <Hero /> */}
             {/* <ChatBot/> */}
           </React.Fragment>}></Route>
           
           <Route path="/testimonials" element={<React.Fragment> {/* Use React.Fragment or <></> */}
             <TestimonialsPage />
+            <Hero />
           </React.Fragment>}></Route>
 
           <Route path="/checkout" element={<CheckOutPage />} />
@@ -41,6 +44,8 @@ function App() {
           <Route path="/PrivacyPolicy" element={ <PrivacyPolicy />}></Route> 
 
         </Routes>
+        <Footer />
+
       </BrowserRouter>
     </div>
   );

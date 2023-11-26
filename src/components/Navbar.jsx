@@ -164,7 +164,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="text-xl py-4 flex">
-                    <Link to="/orders" className="flex items-center">
+                    <Link to="/solutions" className="flex items-center">
                       <TbTruckDelivery size={25} className="mr-4" /> Services
                     </Link>
                   </li>
@@ -181,7 +181,7 @@ const Navbar = () => {
 
             <li className="text-xl py-4 flex">
               {' '}
-              <MdHelp size={25} className="mr-4" /> Promotions{' '}
+              <MdHelp size={25} className="mr-4" /> About Us{' '}
             </li>
 
             <li className="text-xl py-4 flex">

@@ -3,6 +3,8 @@ import DumpsterImage from '../PMTphotos/alphabet-word-images-1293460_1920.png';
 import stock2 from '../PMTphotos/dialogue-window-148174_1280.png'
 import NashMap from '../PMTphotos/NashMap1.png';
 import { useNavigate } from 'react-router-dom';
+import { FaCheckCircle } from 'react-icons/fa'; 
+
 
 const DumpsterRentalCompany = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -101,34 +103,41 @@ const DumpsterRentalCompany = () => {
             services to meet the diverse needs of our clients, including:
           </p>
           <div className="flex flex-wrap justify-center py-4">
-            <ul className="font-semibold text-2xl grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8 text-green-700">
-              <li className="flex items-center">
-                <span className="mr-2">Excavation and Site Preparation</span>
-              </li>
-              <li className="flex items-center">
-                <span className="mr-2">Concrete Foundations and Slabs</span>
-              </li>
-              <li className="flex items-center">
-                <span className="mr-2">Framing and Carpentry</span>
-              </li>
-              <li className="flex items-center">
-                <span className="mr-2">Roofing and Siding</span>
-              </li>
-              <li className="flex items-center">
-                <span className="mr-2">Finishing and Interior Trim</span>
-              </li>
-              <li className="flex items-center">
-                <span className="mr-2">Mechanical and Electrical Systems</span>
-              </li>
-              <li className="flex items-center">
-                <span className="mr-2">Custom Millwork and Cabinetry</span>
-              </li>
-              <li className="flex items-center">
-                <span className="mr-2">Site Development and Landscaping</span>
-              </li>
-                            
-                        </ul>
-                    </div>
+            <ul className="font-semibold text-lg grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-10 text-[#84BD00]">
+                <li className="flex items-center">
+                    <FaCheckCircle className="mr-2" />
+                    <span>Excavation and Site Preparation</span>
+                </li>
+                <li className="flex items-center">
+                    <FaCheckCircle className="mr-2" />
+                    <span>Concrete Foundations and Slabs</span>
+                </li>
+                <li className="flex items-center">
+                    <FaCheckCircle className="mr-2" />
+                    <span>Framing and Carpentry</span>
+                </li>
+                <li className="flex items-center">
+                    <FaCheckCircle className="mr-2" />
+                    <span>Roofing and Siding</span>
+                </li>
+                <li className="flex items-center">
+                    <FaCheckCircle className="mr-2" />
+                    <span>Finishing and Interior Trim</span>
+                </li>
+                <li className="flex items-center">
+                    <FaCheckCircle className="mr-2" />
+                    <span>Mechanical and Electrical Systems</span>
+                </li>
+                <li className="flex items-center">
+                    <FaCheckCircle className="mr-2" />
+                    <span>Custom Millwork and Cabinetry</span>
+                </li>
+                <li className="flex items-center">
+                    <FaCheckCircle className="mr-2" />
+                    <span>Site Development and Landscaping</span>
+                </li>
+            </ul>
+        </div>
                 </div>
 
                 
@@ -142,16 +151,16 @@ const DumpsterRentalCompany = () => {
             <div className={`animation-container col-span-4 flex ${animationClasses(isVisible)}`}>
                 
 
-                    <div class="col-span-2">
-                    <p class="text-2xl font-semibold pb-6">"We're Not Just Stepping Up to the Plate, We're Climbing the Ladder"</p>
-                        <div class="flex flex-col justify-center text-lg">
-                            <p class="text-lg font-bold">Why choose PMT site for your subcontracting job?</p>
-                            <ul class="list-disc list-inside pl-6 mt-2">
-                            <li class="mb-2">Unparalleled Experience and Expertise</li>
-                            <li class="mb-2">Comprehensive Subcontracting Solutions</li>
-                            <li class="mb-2">Unwavering Commitment to Safety</li>
-                            <li class="mb-2">Dedicated Customer Service</li>
-                            <li class="mb-2">Competitive and Transparent Pricing</li>
+                    <div className="col-span-2">
+                    <p className="text-2xl font-semibold pb-6">"We're Not Just Stepping Up to the Plate, We're Climbing the Ladder"</p>
+                        <div className="flex flex-col justify-center text-lg">
+                            <p className="text-lg font-bold">Why choose PMT site for your subcontracting job?</p>
+                            <ul className="list-disc list-inside pl-6 mt-2">
+                            <li className="mb-2">Unparalleled Experience and Expertise</li>
+                            <li className="mb-2">Comprehensive Subcontracting Solutions</li>
+                            <li className="mb-2">Unwavering Commitment to Safety</li>
+                            <li className="mb-2">Dedicated Customer Service</li>
+                            <li className="mb-2">Competitive and Transparent Pricing</li>
                             </ul>
                         </div>
                     </div>

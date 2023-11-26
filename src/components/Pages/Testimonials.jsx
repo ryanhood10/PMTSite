@@ -1,23 +1,24 @@
 import React from 'react';
 
 const testimonials = [
-    { text: "I love my Roomba! It's incredible how it navigates around my house and keeps everything clean. My floors have never looked better.", author: "Samantha" },
-    { text: "The customer service team here is fantastic. I had some questions about the different robots available, and they were so patient and helpful in guiding me to the right choice. The robot I got has become a valuable addition to my home.", author: "Alex" },
-    { text: "I can't believe how advanced these robots are. The way they interact with us and their surroundings is mind-blowing. My kids are fascinated, and I'm amazed by the technology behind these products.", author: "Daniel" },
-    { text: "This website is a game changer. The variety of robots available is impressive, and the quality of the products is top-notch. I've recommended this site to all my friends.", author: "Emily" },
-    { text: "I ordered a robot for my elderly parents, and it has brought them so much joy and companionship. It's like having a new member of the family. Thank you for offering such thoughtful products.", author: "Grace" },
-    { text: "As a tech enthusiast, I'm always on the lookout for innovative gadgets. These robots exceeded my expectations. They're not only functional but also aesthetically pleasing. They're like pieces of art!", author: "Ethan" },
-    { text: "I've been a loyal customer for years, and I've never been disappointed. The products are high-quality, and the shopping experience is seamless. Keep up the great work!", author: "Olivia" },
-    { text: "My kids are absolutely obsessed with the toy robots I got them from here. They provide hours of entertainment and even have educational features. It's a win-win for both parents and kids!", author: "Sophia" },
-    { text: "These robots have made my life so much easier. From cleaning to entertainment, they do it all. I can't imagine my home without them now.", author: "Benjamin" }
-    // Add more testimonials as needed
-  ];
+  { text: "PMT's professionalism and attention to detail on our office renovation project was outstanding. They managed every aspect seamlessly, ensuring minimal disruption to our daily operations.", author: "Nashville Tech Solutions" },
+  { text: "We partnered with PMT for a major expansion of our hotel chain. Their project management skills and quality of work were exceptional, making the entire process smooth and stress-free.", author: "Grand Nashville Hotels" },
+  { text: "As a growing restaurant in Nashville, we needed a reliable subcontractor for our kitchen upgrade. PMT exceeded our expectations with their efficient and high-quality service.", author: "The Southern Spoon" },
+  { text: "PMT's team played a crucial role in the construction of our new retail spaces. Their expertise in managing various subcontractors and ensuring timely completion was invaluable.", author: "Music City Mall" },
+  { text: "For our historic building restoration, we chose PMT. Their respect for architectural integrity and skilled craftsmanship was evident throughout the project.", author: "Nashville Heritage Foundation" },
+  { text: "In the fast-paced world of event management, PMT has been our go-to for setting up complex event spaces. Their team is quick, efficient, and always delivers top-notch results.", author: "Nashville Events Co." },
+  { text: "We required specialized subcontracting for our custom manufacturing facility, and PMT delivered. Their team's technical expertise and commitment to safety were impressive.", author: "Innovate Nashville Industries" },
+  { text: "PMT's contribution to our residential development projects has been phenomenal. Their ability to coordinate multiple trades and maintain high standards is exactly what we needed.", author: "Cumberland Homes" },
+  { text: "As a healthcare provider, we needed a subcontractor who could navigate the complexities of medical facility upgrades. PMT's team was knowledgeable, compliant, and highly professional.", author: "Nashville Health Network" }
+  // Add more testimonials as needed
+];
+
   
 
 const TestimonialsPage = () => {
   return (
     <div className='max-w-[1640px] m-auto px-4 py-12'>
-      <h1 className='text-orange-600 font-bold text-4xl text-center'>Customer Testimonials</h1>
+      <h1 className='text-[#001489] font-bold text-4xl text-center'>Customer Testimonials</h1>
 
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-4'>
         {testimonials.map((testimonial, index) => (

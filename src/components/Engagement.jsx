@@ -1,14 +1,12 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, {  useState, useEffect } from "react";
 import DumpsterImage from '../PMTphotos/alphabet-word-images-1293460_1920.png';
 import stock2 from '../PMTphotos/dialogue-window-148174_1280.png'
 import NashMap from '../PMTphotos/NashMap1.png';
-import { useNavigate } from 'react-router-dom';
 import { FaCheckCircle } from 'react-icons/fa'; 
 
 
 const DumpsterRentalCompany = () => {
     const [isVisible, setIsVisible] = useState(false);
-    const navigate = useNavigate();
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -53,14 +51,13 @@ const DumpsterRentalCompany = () => {
                 <div className={`animation-container ${animationClasses(isVisible)}`}>
           <h1 className="text-[#84BD00] text-xl font-bold">PMT Site</h1>
           <h2 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">
-            Your Expert Subcontracting Partner in Hermitage, TN
+            Your Expert Subcontracting Partner in Middle Tennessee
           </h2>
           <p className="text-xl">
-            PMT Site is a leading subcontracting company in Hermitage,
-            TN, founded in 2019. We specialize in providing high-quality
+             Founded in 2019, we specialize in providing high-quality
             subcontracting services to a wide range of clients in the greater
             Nashville area. Our experienced team is committed to delivering
-            exceptional results on every project we undertake.
+            exceptional results on every project we take on.
           </p>
           <p className="text-[#84BD00] text-lg">
             Contact us today to learn more about how we can help you with your
@@ -96,46 +93,39 @@ const DumpsterRentalCompany = () => {
 
                 </div>
 
-        <div className={`animation-container ${animationClasses(isVisible)}`}>
-          <h2 className="text-center md:text-4xl sm:text-3xl text-2xl font-bold py-2">
+        <div className={`animation-container px-2 py-2 ${animationClasses(isVisible)}`}>
+          <h2 className="text-center  md:text-4xl sm:text-3xl text-2xl font-bold py-2">
             Our Comprehensive Subcontracting Services
           </h2>
-          <p className="text-center md:text-xl sm:text-xl text-xl justify-center font-semibold">
+          {/* <p className="text-center md:text-xl sm:text-xl text-xl justify-center font-semibold">
             PMT Subcontracting offers a comprehensive range of subcontracting
             services to meet the diverse needs of our clients, including:
-          </p>
+          </p> */}
           <div className="flex flex-wrap justify-center py-4">
-            <ul className="font-semibold text-lg grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-10 text-[#84BD00]">
-                <li className="flex items-center">
-                    <FaCheckCircle className="mr-2" />
+            <ul className="py-2 px-2 font-semibold text-lg grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-10 text-[#84BD00]">
+                <li className="flex space-x-2 items-center">
+                    <FaCheckCircle className="mr-2 text-4xl" />
                     <span>Excavation and Site Preparation</span>
                 </li>
-                <li className="flex items-center">
-                    <FaCheckCircle className="mr-2" />
+                <li className="flex space-x-2 items-center">
+                    <FaCheckCircle className="mr-2 text-4xl" />
                     <span>Concrete Foundations and Slabs</span>
                 </li>
-                <li className="flex items-center">
-                    <FaCheckCircle className="mr-2" />
-                    <span>Framing and Carpentry</span>
+                <li className="flex space-x-2 items-center">
+                    <FaCheckCircle className="mr-2 text-4xl" />
+                    <span>Public and Private Utilities</span>
                 </li>
-                <li className="flex items-center">
-                    <FaCheckCircle className="mr-2" />
-                    <span>Roofing and Siding</span>
+                <li className="flex space-x-2 items-center">
+                    <FaCheckCircle className="mr-2 text-4xl" />
+                    <span>Public and Private Water/ Fire Water Supply</span>
                 </li>
-                <li className="flex items-center">
-                    <FaCheckCircle className="mr-2" />
-                    <span>Finishing and Interior Trim</span>
+                <li className="flex space-x-2 items-center">
+                    <FaCheckCircle className="mr-2 text-4xl" />
+                    <span>Stormwater and Sanitary Sewer</span>
                 </li>
-                <li className="flex items-center">
-                    <FaCheckCircle className="mr-2" />
-                    <span>Mechanical and Electrical Systems</span>
-                </li>
-                <li className="flex items-center">
-                    <FaCheckCircle className="mr-2" />
-                    <span>Custom Millwork and Cabinetry</span>
-                </li>
-                <li className="flex items-center">
-                    <FaCheckCircle className="mr-2" />
+        
+                <li className="flex space-x-2 items-center">
+                    <FaCheckCircle className="mr-2 text-4xl" />
                     <span>Site Development and Landscaping</span>
                 </li>
             </ul>

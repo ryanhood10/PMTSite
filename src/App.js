@@ -1,19 +1,17 @@
-import React from 'react';
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Hero2 from './components/Hero2'
-import HeadlineCards from './components/HeadlineCards';
-// import Robots from './components/Robots';
-import Category from './components/Category';
-import TestimonialsPage from './components/Pages/Testimonials';
-import Favorites from './components/Pages/Favorites';
+import React, { Suspense } from 'react';
+import Navbar from './components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import CheckOutPage from './components/Pages/CheckOutPage';
-import OrdersPage from './components/Pages/Orders';
-import PrivacyPolicy from './components/Pages/PrivacyPolicy';
-import Engagement from './components/Engagement';
-import Footer from './components/Footer';
-// import ChatBot from './components/Chatbot';
+const Hero = React.lazy(() => import('./components/Hero'));
+const Hero2 = React.lazy(() => import('./components/Hero2'));
+const HeadlineCards = React.lazy(() => import('./components/HeadlineCards'));
+const TestimonialsPage = React.lazy(() => import('./components/Pages/Testimonials'));
+const Favorites = React.lazy(() => import('./components/Pages/Favorites'));
+const CheckOutPage = React.lazy(() => import('./components/Pages/CheckOutPage'));
+const OrdersPage = React.lazy(() => import('./components/Pages/Orders'));
+const PrivacyPolicy = React.lazy(() => import('./components/Pages/PrivacyPolicy'));
+const Engagement = React.lazy(() => import('./components/Engagement'));
+const Footer = React.lazy(() => import('./components/Footer'));
+const TNBanner = React.lazy(() => import('./components/TNBanner'));
 
 function App() {
   return (
@@ -21,31 +19,40 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<React.Fragment> {/* Use React.Fragment or <></> */}
-            {/* <Hero /> */}
-            <Hero2 />
-            <Engagement />
-            <HeadlineCards />
-            {/* <Robots /> */}
-            {/* <Category /> */}
-            {/* <Hero /> */}
-            {/* <ChatBot/> */}
-          </React.Fragment>}></Route>
+          <Route
+            path="/"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <React.Fragment>
+                  <Hero2 />
+                  <TNBanner />
+                  <Engagement />
+                  <HeadlineCards />
+                </React.Fragment>
+              </Suspense>
+            }
+          />
           
-          <Route path="/testimonials" element={<React.Fragment> {/* Use React.Fragment or <></> */}
-            <TestimonialsPage />
-            <Hero />
-          </React.Fragment>}></Route>
+          <Route
+            path="/testimonials"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <React.Fragment>
+                  <TestimonialsPage />
+                  <Hero />
+                </React.Fragment>
+              </Suspense>
+            }
+          />
 
           <Route path="/checkout" element={<CheckOutPage />} />
-
-          <Route path="/orders" element={ <OrdersPage />}></Route> 
-          <Route path="/favorites" element={ <Favorites />}></Route> 
-          <Route path="/PrivacyPolicy" element={ <PrivacyPolicy />}></Route> 
-
+          <Route path="/orders" element={<OrdersPage />} /> 
+          <Route path="/favorites" element={<Favorites />} /> 
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} /> 
         </Routes>
-        <Footer />
-
+        <Suspense fallback={<div>Loading...</div>}>
+          <Footer />
+        </Suspense>
       </BrowserRouter>
     </div>
   );

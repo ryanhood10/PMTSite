@@ -59,6 +59,7 @@ function ChatBot() {
       <button
         className="bg-blue-500 text-white px-2 py-1 rounded-lg mb-2"
         onClick={handleToggleChatbot}
+        id="chatbot-button"
       >
         Toggle Chatbot
       </button>

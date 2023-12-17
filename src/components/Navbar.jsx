@@ -69,8 +69,10 @@ const Navbar = () => {
 
       
 <div className='flex justify-center items-center space-x-16 pr-4'>
+  <a href="#contact">
       <button className="bg-[#001489] text-white font-bold text-2xl hidden md:flex items-center py-2 px-4 justify-center rounded-full"
         > Contact Us </button>   
+        </a>
         
         <div
           onClick={() => setNav(!nav)}

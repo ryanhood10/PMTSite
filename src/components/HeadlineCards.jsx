@@ -8,26 +8,23 @@ const ContactCards = () => {
       {
         name: "Phil Terhaar",
         title: "Owner/President",
-        phone: "618-402-7440",
         email: "pterhaar@pmtsite.com"
       },
       {
         name: "Dominic Charielle",
         title: "Owner/COO",
-        phone: "630-636-0838",
         email: "dcharielle@pmtsite.com"
       },
       {
         name: "Brett Alfrey",
-        title: "CFA",
-        phone: "859-468-5684",
+        title: "CFO",
         email: "balfrey@pmtsite.com"
       }
     ];
 
     return (
-      <div>
-      <h1 className='text-center text-3xl font-semibold text-[#001489]'> Contact Information </h1>
+      <div id="contact">
+      <h1  className='text-center text-3xl font-semibold text-[#001489]'> Contact Information </h1>
       <div className='mx-w-[1640px] mx-auto p-4 py-12 grid md:grid-cols-3 gap-6'>
         {contacts.map((contact, index) => (
           <div key={index} className='rounded-xl relative hover:scale-105 duration-300 border-2 border-black shadow-md bg-gray-200'>

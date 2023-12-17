@@ -43,28 +43,7 @@ const Navbar = () => {
 
       {/* Search Input */}
       <div className="hidden lg:flex border-black border-solid rounded-full items-center px-2 w-[500px] ">
-      {/* <div className="w-full  p-4 relative"> */}
-      {/* overlay */}
-      {/* <div className="absolute inset-0 text-black   rounded-2xl flex flex-col justify-center">
-        <div className="flex justify-center pl-10">
-          <div className="text-[#001489] py-8 px-4 text-md w-2/3 space-y-2">
-            <div className="flex  items-center">
-                <FaCheckCircle className="mr-2 text-4xl" />
-                <h1 className="px-4  font-bold">
-                  Registered TDOT Contractor
-                </h1>
-              </div>
-              <div className="flex items-center">
-                <FaCheckCircle className="mr-2 text-4xl" />
-                <h1 className="px-4  font-bold">
-                  Registered Metro Contractor
-                </h1>
-              </div>
-          </div>
-        </div>
-      </div>
-      <img className=" max-h-[100px]" src={TDOTBanner} alt="robot1" />
-    </div> */}
+  
       </div>
 
       
@@ -119,7 +98,9 @@ const Navbar = () => {
 
             <li className="text-xl py-4 flex">
               {' '}
+              <Link to="/AboutUs" className="flex items-center">
               <MdHelp size={25} className="mr-4" /> About Us{' '}
+              </Link>
             </li>
 
             <li className="text-xl py-4 flex">

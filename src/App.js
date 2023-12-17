@@ -6,7 +6,7 @@ const Hero2 = React.lazy(() => import('./components/Hero2'));
 const HeadlineCards = React.lazy(() => import('./components/HeadlineCards'));
 const TestimonialsPage = React.lazy(() => import('./components/Pages/Testimonials'));
 const Favorites = React.lazy(() => import('./components/Pages/Favorites'));
-const CheckOutPage = React.lazy(() => import('./components/Pages/CheckOutPage'));
+const AboutUs = React.lazy(() => import('./components/Pages/AboutUs'));
 const OrdersPage = React.lazy(() => import('./components/Pages/Orders'));
 const PrivacyPolicy = React.lazy(() => import('./components/Pages/PrivacyPolicy'));
 const Engagement = React.lazy(() => import('./components/Engagement'));
@@ -45,7 +45,7 @@ function App() {
             }
           />
 
-          <Route path="/checkout" element={<CheckOutPage />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/orders" element={<OrdersPage />} /> 
           <Route path="/favorites" element={<Favorites />} /> 
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} /> 

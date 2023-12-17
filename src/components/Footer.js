@@ -38,7 +38,7 @@ function Footer() {
         `transform transition-all duration-1000 ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`;
 
     return (
-        <footer ref={footerRef} className={`max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-600 ${animationClasses(footerVisible)}`}>
+        <footer id="contact" ref={footerRef} className={`max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-600 ${animationClasses(footerVisible)}`}>
             <div className='lg:col-span-3 flex justify-between space-x-10'>
                 <div>
                 <h1 className='text-[#84BD00] font-bold text-4xl text-center'> Connect with us Further  </h1>

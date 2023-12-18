@@ -3,26 +3,29 @@ import DumpsterImage from '../../PMTphotos/PMT-community-1.png'
 import { FaCheckCircle } from 'react-icons/fa'; 
 import NashMap from '../../PMTphotos/NashMap1.png'
 
+
 const AboutUs = () => {
     return (
         <div className="w-full bg-white py-16 px-4">
-            <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 pb-2">
+            <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 px-4 py-2">
                 <div className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">
-                    <h1 className="text-[#84BD00] text-xl font-bold">About PMT Site: Nashville Subcontracting Experts</h1>
-                    <p className="text-lg pb-4">
-                        Searching for reliable subcontracting services in Nashville? Look no further than PMT Site! We're your trusted partner for top-notch excavation, concrete, utilities, landscaping, and more. Since 2019, we've built a reputation for excellence, safety, and exceeding client expectations on every project.
-                    </p>
-                    <p className="text-2x text-[#84BD00]">
-                        Why Choose PMT Site for Your Nashville Project?
-                    </p>
-                    <ul className="py-2 px-2 font-thin list-disc list-inside pl-4 text-gray-500">
-                        <li><span className="font-bold text-black">Nashville-based: <br/></span>We know the local landscape and building codes inside-out.</li>
-                        <li><span className="font-bold text-black"> Experienced & Expert: <br/></span>Our team boasts seasoned professionals with proven success.</li>
-                        <li><span className="font-bold text-black">EComprehensive Services: <br/></span>We handle all your subcontracting needs, from excavation to final touches.</li>
-                        <li><span className="font-bold text-black">EUnwavering Safety: </span><br/>We prioritize worker and public safety on every project.</li>
-                        <li><span className="font-bold text-black">EDedicated Customer Service: </span><br/>You'll always have a point of contact and clear communication.</li>
-                        <li><span className="font-bold text-black">ECompetitive & Transparent Pricing: </span><br/>No hidden fees, just upfront quotes you can trust.</li>
-                    </ul>
+                <h1 className="text-[#84BD00] text-2xl py-2 font-bold"> Your Local Nashville Subcontracting Team</h1>
+<p className="text-lg pb-4">
+    PMT Site is your trusted local partner for subcontracting services in Nashville. 
+    Since 2019, we have proudly served our community with top-quality excavation, concrete, utilities, landscaping, and more. 
+    <br></br>
+    We are dedicated to ensuring satisfaction on every project we undertake.
+</p>
+<p className="text-2xl text-[#84BD00]">
+    Our Commitment to Nashville
+</p>
+<p className="text-lg">Being a team of Nashville locals, PMT Site takes pride in serving the Middle Tennesse Community.</p>
+{/* <br/>
+<p className="text-xl text-[#84BD00]">
+    PMT & Community Service
+</p> */}
+
+                   
                 </div>
                 <div>
                     <img className="max-h-[400px] rounded-3xl" src={DumpsterImage} alt="Dumpster" />
@@ -94,3 +97,4 @@ const AboutUs = () => {
 }
 
 export default AboutUs;
+

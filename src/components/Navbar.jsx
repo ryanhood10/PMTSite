@@ -6,7 +6,7 @@ import {  MdHelp } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import PMTsiteLogo from '../PMTphotos/PMTsiteLogo.png';
 import TDOTBanner from '../images/TDOT Banner.png';
-import { FaCheckCircle } from 'react-icons/fa'; 
+import { FaCheckCircle, FaUser } from 'react-icons/fa'; 
 
 import {
   FacebookShareButton,
@@ -58,7 +58,10 @@ const Navbar = () => {
           className="cursor-pointer"
         >
           <AiOutlineMenu size={30} />
+
         </div></div>
+
+       
 
 
       {/* Mobile Menu */}
@@ -108,6 +111,13 @@ const Navbar = () => {
               <AiFillTag size={25} className="mr-4" /> Testimonials{' '}
               </Link>
             </li>
+
+             {/* Join Our Team button */}
+             <li className="text-xl py-4 flex">
+        <Link to="/JoinOurTeam" className="flex items-center">
+          <FaUser size={25} className="mr-4" /> Join Our Team
+        </Link>
+      </li>
 
           
             

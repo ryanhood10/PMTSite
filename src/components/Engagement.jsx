@@ -146,14 +146,17 @@ const DumpsterRentalCompany = () => {
                     <div className="col-span-2">
                     <p className="text-2xl font-semibold pb-6">"We're Not Just Stepping Up to the Plate, We're Climbing the Ladder"</p>
                         <div className="flex flex-col justify-center text-lg">
-                            <p className="text-lg font-bold">Why choose PMT site for your subcontracting job?</p>
-                            <ul className="list-disc list-inside pl-6 mt-2">
-                            <li className="mb-2">Unparalleled Experience and Expertise</li>
-                            <li className="mb-2">Comprehensive Subcontracting Solutions</li>
-                            <li className="mb-2">Unwavering Commitment to Safety</li>
-                            <li className="mb-2">Dedicated Customer Service</li>
-                            <li className="mb-2">Competitive and Transparent Pricing</li>
-                            </ul>
+                        <p className="text-2xl text-[#84BD00]">
+                        Why Choose PMT Site for Your Nashville Project?
+                    </p>
+                    <ul className="py-2 px-2 font-light list-disc list-inside pl-4 text-gray-500">
+                        <li><span className="font-bold text-black">Nashville-based: <br/></span>We know the local landscape and building codes inside-out.</li>
+                        <li><span className="font-bold text-black">Experienced & Expert: <br/></span>Our team consists of seasoned professionals with proven success.</li>
+                        <li><span className="font-bold text-black">Comprehensive Services: <br/></span>We handle all your subcontracting needs, from excavation to final touches.</li>
+                        <li><span className="font-bold text-black">Unwavering Safety: </span><br/>We prioritize worker and public safety on every project.</li>
+                        <li><span className="font-bold text-black">Dedicated Customer Service: </span><br/>You'll always have a point of contact and clear communication.</li>
+                        <li><span className="font-bold text-black">Competitive & Transparent Pricing: </span><br/>No hidden fees, just upfront quotes you can trust.</li>
+                    </ul>
                         </div>
                     </div>
             </div>

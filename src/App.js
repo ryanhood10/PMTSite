@@ -59,7 +59,11 @@ function App() {
             }
           />
 
-          <Route path="/AboutUs" element={<AboutUs />} /> 
+          <Route path="/AboutUs" element={
+                        <Suspense fallback={<div>Loading...</div>}>
+          <AboutUs />
+          </Suspense>
+          } /> 
           <Route path="/favorites" element={<Favorites />} /> 
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} /> 
         </Routes>

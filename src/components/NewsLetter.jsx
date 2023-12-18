@@ -99,10 +99,9 @@ const NewsLetter = () => {
         <div ref={newsletterRef} className={`w-full py-8 md:py-16 px-4 ${animationClasses(newsletterVisible)}`}>
             <div className="max-w-[1240px] mx-auto grid"> 
                 <div className="">
-                    <h1 className="text-xl md:text-2xl lg:text-4xl font-bold py-1 md:py-2">🤖 Want to enhance efficiency and elevate customer satisfaction with a chatbot?
-                    <br></br>
-                    🖥️ Need a website or application developed that boosts your online presence? </h1>
-                    <p>See how we can improve your business and save you time!</p>
+                    <h1 className="text-xl md:text-2xl lg:text-4xl font-bold py-1 md:py-2">Ready to join PMT Site?
+                    <br></br></h1>
+                    <p>We'd love to hear from you! Contact us below or send a resume to <a href="mailto:Ceshleman@pmtsite.com" className="text-blue-500 hover:underline">Ceshleman@pmtsite.com</a></p>
                 </div>
                 <div className="my-2 md:my-4">
                     <div className="flex flex-col items-center bg-gray-50">
@@ -136,15 +135,14 @@ const NewsLetter = () => {
                                     {errors[field] && <span className="error">{errors[field]}</span>}
                                 </div>
                             ))}
-                            <button type="submit" className="bg-[#FF0033] w-[200px] rounded-md font-bold my-3 md:my-6 mx-auto py-2 md:py-3 text-white hover:bg-purple-300">Send Email</button>
+                            <button type="submit" className="bg-[#001489] w-[200px] rounded-md font-bold my-3 md:my-6 mx-auto py-2 md:py-3 text-white hover:bg-purple-300">Send Email</button>
                         </form>
                     </div>
                     <p className="text-sm md:text-base">
-                        Learn more about our established techniques on our{" "}
-                        <Link to="/solutions" className="text-[#FF0033]">
-                            Solutions
+                        Learn more {" "}
+                        <Link to="/AboutUs" className="text-blue-500 hover:underline">
+                            About Us
                         </Link>{" "}
-                        page.
                     </p>
                 </div>
             </div>

@@ -70,6 +70,18 @@ function App() {
 
           </Suspense>
           } /> 
+
+<Route
+            path="/Contact"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <React.Fragment>
+                <Hero />
+                  <NewsLetter2 />
+                </React.Fragment>
+              </Suspense>
+            }
+          />
           <Route path="/favorites" element={<Favorites />} /> 
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} /> 
         </Routes>

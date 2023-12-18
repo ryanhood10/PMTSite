@@ -48,11 +48,10 @@ const Navbar = () => {
 
       
 <div className='flex justify-center items-center space-x-16 pr-4'>
-  <a href="#contact">
+<Link to="/Contact" >
       <button className="bg-[#001489] text-white font-bold text-2xl hidden md:flex items-center py-2 px-4 justify-center rounded-full"
         > Contact Us </button>   
-        </a>
-        
+</Link>        
         <div
           onClick={() => setNav(!nav)}
           className="cursor-pointer"

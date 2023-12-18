@@ -7,10 +7,10 @@ import teamPMT from '../../PMTphotos/PMT_community_2.png'
 
 const AboutUs = () => {
     return (
-        <div className="w-full bg-white py-16 px-4">
+        <div className="w-full bg-white py-2 px-4">
             <div className="max-w-[1240px] mx-auto block align-middle items-center px-4 py-2">
-            <div className="flex align-middle items-center">
-                    <img className="max-h-[400px] rounded-3xl" src={teamPMT} alt="Dumpster" />
+            <div className="w-full flex justify-center items-center">
+                    <img className="max-h-[400px] pb-2 rounded-3xl" src={teamPMT} alt="Dumpster" />
                 </div>
                 <div className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">
                 <h1 className="text-[#84BD00] text-2xl py-2 font-bold"> Your Local Nashville Subcontracting Team</h1>
@@ -23,10 +23,10 @@ const AboutUs = () => {
 </div>
 <div className="max-w-[1240px]  flex align-middle items-center px-4 py-2">
 <div className="px-4 py-4">
-<p className="text-4xl font-semibold text-[#84BD00]">
+<p className="text-4xl font-bold py-2 text-[#84BD00]">
     Our Commitment to Nashville
 </p>
-<p className="text-lg">Being a team of Nashville locals, PMT Site takes pride in serving the Middle Tennesse Community.</p>
+<p className="text-lg font-semibold">Being a team of Nashville locals, PMT Site takes pride in serving the Middle Tennesse Community.</p>
 {/* <br/>
 <p className="text-xl text-[#84BD00]">
     PMT & Community Service

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'; // Import the phone icon
 
 function useVisible(initialVisibility = false) {
     const [isVisible, setIsVisible] = useState(initialVisibility);
@@ -41,11 +41,15 @@ function Footer() {
         <footer id="contact" ref={footerRef} className={`max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-600 ${animationClasses(footerVisible)}`}>
             <div className='lg:col-span-3 flex justify-between space-x-10'>
                 <div>
-                <h1 className='text-[#84BD00] font-bold text-4xl text-center'> Connect with us Further  </h1>
+                    <h1 className='text-[#84BD00] font-bold text-4xl text-center'> Connect with us Further  </h1>
                     <p className='py-4'>
-                    Connect with us on LinkedIn, Facebook, or send us an email at:   
-                     <a href="mailto:Ceshleman@pmtsite.com" className="text-blue-500 hover:underline">Ceshleman@pmtsite.com</a>
+                        Connect with us on LinkedIn, Facebook, or send us an email at:   
+                        <a href="mailto:Ceshleman@pmtsite.com" className="text-blue-500 hover:underline"> Ceshleman@pmtsite.com</a>
 
+                        {/* Add phone icon and phone number */}
+                        <br />
+                        <br />
+                        <FontAwesomeIcon icon={faPhone} size="lg" /> Call us at: <a href="tel:215-704-5692" className="text-blue-500 hover:underline">215-704-5692</a>
                     </p>
 
                     <nav>

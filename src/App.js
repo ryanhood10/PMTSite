@@ -13,6 +13,7 @@ const Engagement = React.lazy(() => import('./components/Engagement'));
 const Footer = React.lazy(() => import('./components/Footer'));
 const TNBanner = React.lazy(() => import('./components/TNBanner'));
 const NewsLetter = React.lazy(() => import('./components/NewsLetter'));
+const NewsLetter2 = React.lazy(() => import('./components/NewsLetter2'));
 
 function App() {
   return (
@@ -61,7 +62,12 @@ function App() {
 
           <Route path="/AboutUs" element={
                         <Suspense fallback={<div>Loading...</div>}>
+                                          <React.Fragment>
+
           <AboutUs />
+          <NewsLetter2 />
+          </React.Fragment>
+
           </Suspense>
           } /> 
           <Route path="/favorites" element={<Favorites />} /> 

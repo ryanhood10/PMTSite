@@ -135,7 +135,7 @@ const NewsLetter = () => {
                                     {errors[field] && <span className="error">{errors[field]}</span>}
                                 </div>
                             ))}
-                            <button type="submit" className="bg-[#001489] w-[200px] rounded-md font-bold my-3 md:my-6 mx-auto py-2 md:py-3 text-white hover:bg-purple-300">Send Email</button>
+                            <button type="submit" className="bg-[#001489] w-[200px] rounded-md font-bold my-3 md:my-6 mx-auto py-2 md:py-3 text-white hover:bg-[#84BD00]">Send Email</button>
                         </form>
                     </div>
                     <p className="text-sm md:text-base">

@@ -563,11 +563,11 @@ video {
 .mr-4 {
   margin-right: 1rem;
 }
-.mt-2 {
-  margin-top: 0.5rem;
-}
 .mt-4 {
   margin-top: 1rem;
+}
+.block {
+  display: block;
 }
 .flex {
   display: flex;
@@ -1013,6 +1013,9 @@ video {
 .text-center {
   text-align: center;
 }
+.align-middle {
+  vertical-align: middle;
+}
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -1154,6 +1157,10 @@ video {
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.hover\:bg-\[\#84BD00\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(132 189 0 / var(--tw-bg-opacity));
+}
 .hover\:bg-\[\#c1e867\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(193 232 103 / var(--tw-bg-opacity));
@@ -1169,10 +1176,6 @@ video {
 .hover\:bg-pink-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(236 72 153 / var(--tw-bg-opacity));
-}
-.hover\:bg-purple-300:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
 }
 .hover\:font-bold:hover {
   font-weight: 700;

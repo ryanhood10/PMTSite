@@ -23,7 +23,7 @@ const ContactCards = () => {
     ];
 
     return (
-      <div id="contact">
+      <div >
       <h1  className='text-center text-3xl font-semibold text-[#001489]'> Contact Information </h1>
       <div className='mx-w-[1640px] mx-auto p-4 py-12 grid md:grid-cols-3 gap-6'>
         {contacts.map((contact, index) => (

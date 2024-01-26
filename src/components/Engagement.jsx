@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DumpsterImage from '../PMTphotos/alphabet-word-images-1293460_1920.png';
-import stock2 from '../PMTphotos/dialogue-window-148174_1280.png'
+import stock2 from '../images/Screenshot 2024-01-26 at 1.23.22 PM.png'
 import NashMap from '../PMTphotos/NashMap1.png';
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -64,7 +64,11 @@ const DumpsterRentalCompany = () => {
                     </button>
                 </div>
                 <div className={`animation-container ${animationClasses(isVisible)}`}>
+                    <div className="flex">
                     <img className="max-h-[400px]  rounded-3xl" src={stock2} alt="Dumpster" />
+                    <img className="max-h-[400px]  rounded-3xl" src={stock2} alt="Dumpster" />
+                    <img className="max-h-[400px]  rounded-3xl" src={stock2} alt="Dumpster" />
+                    </div>
                 </div>
             </div>
             {/* second column */}

@@ -3,6 +3,19 @@ import DumpsterImage from '../PMTphotos/alphabet-word-images-1293460_1920.png';
 import stock2 from '../images/Screenshot 2024-01-26 at 1.23.22 PM.png'
 import NashMap from '../PMTphotos/NashMap1.png';
 import { FaCheckCircle } from 'react-icons/fa';
+import Slider from "react-slick"; // Import the Slider component
+import Basketball from "../images/basketball.jpeg"
+import Barrels from "../images/IMG_2080.jpeg"
+import Tractor from '../images/Screenshot 2024-02-10 at 1.43.36 AM.png';
+import Contractor from '../images/stockContractor-transformed.jpeg';
+import Contractor2 from '../images/stockContractor2-transformed.jpeg';
+import Snowman from '../images/snowman2.png';
+
+
+// carousel css
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 const DumpsterRentalCompany = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -40,6 +53,16 @@ const DumpsterRentalCompany = () => {
             });
         }
     };
+   // Settings for the slider
+   const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    cssEase: "linear"
+};
+
 
     return (
         <div className="w-full bg-white py-16 px-4">
@@ -64,20 +87,36 @@ const DumpsterRentalCompany = () => {
                     </button>
                 </div>
                 <div className={`animation-container ${animationClasses(isVisible)}`}>
-                    <div className="flex">
-                    <img className="max-h-[400px]  rounded-3xl" src={stock2} alt="Dumpster" />
-                    <img className="max-h-[400px]  rounded-3xl" src={stock2} alt="Dumpster" />
-                    <img className="max-h-[400px]  rounded-3xl" src={stock2} alt="Dumpster" />
-                    </div>
+                    {/* Carousel integration starts here */}
+                    <Slider {...settings}>
+                        <div>
+                            <img className="max-h-[400px] w-full rounded-3xl" src={stock2} alt="Dumpster" />
+                        </div>
+                        <div>
+                            <img className="max-h-[400px] w-full rounded-3xl" src={Basketball} alt="Dumpster" />
+                        </div>
+                        <div>
+                            <img className="max-h-[400px] w-full rounded-3xl" src={stock2} alt="Dumpster" />
+                        </div>
+                    </Slider>
                 </div>
             </div>
             {/* second column */}
             <div className="max-w-[1240px] mx-auto pt-2 pb-28 space-x-4 grid md:grid-cols-2">
                 <div className={`animation-container  ${animationClasses(isVisible)}`}>
-                    <div className="flex space-y-2">
-                        <img className="w-full rounded-3xl" src={NashMap} alt="Dumpster" />
-                    </div>
-                    <h4 className="py-2 text-center md:text-xl sm:text-xl text-xl justify-center font-semibold">
+                    {/* Carousel integration starts here */}
+                    <Slider {...settings}>
+                        <div>
+                            <img className="max-h-[400px] w-full rounded-3xl" src={Barrels} alt="Dumpster" />
+                        </div>
+                        <div>
+                            <img className="max-h-[400px] w-full rounded-3xl" src={Contractor} alt="Contractor" />
+                        </div>
+                        <div>
+                            <img className="max-h-[400px] w-full rounded-3xl" src={Contractor2} alt="Contractors" />
+                        </div>
+                    </Slider>
+                    <h4 className="py-8 text-center md:text-xl sm:text-xl text-xl justify-center font-semibold">
                         <span className="text-[#84BD00]">PMT Subcontracting:  </span>
                         Providing exceptional subcontracting services to the greater Nashville area, built on trust, integrity, and a commitment to quality.
                     </h4>
@@ -118,14 +157,14 @@ const DumpsterRentalCompany = () => {
             </div>
             {/* 3rd column */}
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-5 pb-2">
-                <img className="max-h-[400px] rounded-3xl" src={DumpsterImage} alt="Dumpster" />
+                <img className="max-h-[400px] rounded-3xl" src={Snowman} alt="Snow Man" />
                 <div className={`animation-container col-span-4 flex ${animationClasses(isVisible)}`}>
-                    <div className="col-span-2">
-                        <p className="text-2xl font-semibold pb-6">"We're Not Just Stepping Up to the Plate, We're Climbing the Ladder"</p>
+                    <div className="col-span-2 px-8">
+                        <p className="text-2xl font-semibold pb-6"> Why Choose PMT Site for Your Nashville Project?</p>
                         <div className="flex flex-col justify-center text-lg">
-                            <p className="text-2xl text-[#84BD00]">
+                            {/* <p className="text-2xl text-[#84BD00]">
                                 Why Choose PMT Site for Your Nashville Project?
-                            </p>
+                            </p> */}
                             <ul className="py-2 px-2 font-light list-disc list-inside pl-4 text-gray-500">
                                 <li><span className="font-bold text-black">Nashville-based: <br/></span>We know the local landscape and building codes inside-out.</li>
                                 <li><span className="font-bold text-black">Experienced & Expert: <br/></span>Our team consists of seasoned professionals with proven success.</li>

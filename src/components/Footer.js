@@ -42,7 +42,7 @@ function Footer() {
             <div className='lg:col-span-3 flex justify-between space-x-10'>
                 <div>
                     <h1 className='text-[#84BD00] font-bold text-4xl text-center'> Connect with us Further  </h1>
-                    <p className='py-4'>
+                    <p className='py-4 text-xl'>
                         Connect with us on LinkedIn, Facebook, or send us an email at:   
                         <a href="mailto:Ceshleman@pmtsite.com" className="text-blue-500 hover:underline"> Ceshleman@pmtsite.com</a>
 

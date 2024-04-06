@@ -124,18 +124,20 @@ const DumpsterRentalCompany = () => {
                         </div>
                     </Slider>
                     <h4 className="py-8 text-center md:text-xl sm:text-xl text-xl justify-center font-semibold">
-                        <span className="text-[#84BD00]">PMT Subcontracting:  </span>
+                        <span className="text-[#001489]]">PMT Site:  </span>
                         Your trusted Middle Tennessee Subcontractor for all your site development needs.
                     </h4>
                 </div>
                 <div className={`animation-container px-2 py-2 ${animationClasses(isVisible)}`}>
-                    <h2 className="text-center md:text-4xl sm:text-3xl text-2xl font-bold py-2">
-                        <span className="text-[#84BD00]">Trusted Nashville Subcontracting Services: </span>
+                    <h2 className="text-center md:text-xl sm:text-2xl text-xl font-bold py-2">
+                        <span className="text-[#001489] text-2xl">Trusted Nashville Subcontracting Services: </span>
                         <br></br>
-                        Excavation, Concrete, Utilities & More
+                        <br></br>
+                        Excavation, Concrete, Utilities & More!
+                        <br></br>
                     </h2>
                     <div className="flex flex-wrap justify-center py-4">
-                        <ul className="py-2 px-2 font-semibold text-lg grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-10 text-[#84BD00]">
+                        <ul className="py-2 px-2 font-semibold text-lg grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-10 text-[#001489]">
                             <li className="flex space-x-2 items-center">
                                 <FaCheckCircle className="mr-2 text-4xl" />
                                 <span>Excavation and Site Preparation</span>
@@ -169,7 +171,7 @@ const DumpsterRentalCompany = () => {
   <img className="rounded-3xl" src={Team} alt="Satisfied Customer with PMT Site" />
   <div className={`animation-container col-span-4 flex ${animationClasses(isVisible)}`}>
     <div className="col-span-2 space-x-8 px-8">
-      <h2 className="text-2xl font-semibold pb-6">
+      <h2 className="text-2xl text-[#001489] font-bold ">
         Why Choose PMT Site: Your Top Nashville Subcontractor
       </h2>
       <div className="flex flex-col justify-center text-lg">

@@ -7,17 +7,17 @@ const ContactCards = () => {
     const contacts = [
       {
         name: "Phil Terhaar",
-        title: "Owner/President",
+        title: "Estimating and Project Management ",
         email: "pterhaar@pmtsite.com"
       },
       {
-        name: "Dominic Charielle",
-        title: "Owner/COO",
-        email: "dcharielle@pmtsite.com"
+        name: "Craiger Eshleman",
+        title: "Sales, Marketing and HR",
+        email: "ceshleman@pmtsite.com"
       },
       {
         name: "Brett Alfrey",
-        title: "CFO",
+        title: "Finance and Accounting",
         email: "balfrey@pmtsite.com"
       }
     ];

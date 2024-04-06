@@ -14,6 +14,7 @@ const Footer = React.lazy(() => import('./components/Footer'));
 const TNBanner = React.lazy(() => import('./components/TNBanner'));
 const NewsLetter = React.lazy(() => import('./components/NewsLetter'));
 const NewsLetter2 = React.lazy(() => import('./components/NewsLetter2'));
+const NuestroEquipo = React.lazy(() => import('./components/Pages/NuestroEquipo'));
 
 function App() {
   return (
@@ -54,6 +55,19 @@ function App() {
                 <React.Fragment>
                 <Hero />
                   <JoinOurTeam />
+                  <NewsLetter />
+                </React.Fragment>
+              </Suspense>
+            }
+          />
+
+<Route
+            path="/NuestroEquipo"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <React.Fragment>
+                <Hero />
+                  <NuestroEquipo />
                   <NewsLetter />
                 </React.Fragment>
               </Suspense>

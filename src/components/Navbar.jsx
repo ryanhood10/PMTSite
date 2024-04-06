@@ -116,6 +116,13 @@ const Navbar = () => {
         <Link to="/JoinOurTeam" className="flex items-center">
           <FaUser size={25} className="mr-4" /> Join Our Team
         </Link>
+        </li>
+
+        {/* Join Our Team button */}
+        <li className="text-xl py-4 flex">
+        <Link to="/NuestroEquipo" className="flex items-center">
+          <FaUser size={25} className="mr-4" /> Nuestro Equipo
+        </Link>
       </li>
 
           

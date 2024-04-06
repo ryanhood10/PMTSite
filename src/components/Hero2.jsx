@@ -4,7 +4,7 @@ import stock1 from '../PMTphotos/subcontractorStock-transformed.png';
 const Hero2 = () => {
     return (
         <div className="w-full mx-auto p-4">
-            <div className=' relative rounded-xl overflow-hidden md:max-h-[650px] lg:max-h-[800px]'>
+            <div className=' relative rounded-xl overflow-hidden md:max-h-[520px] lg:max-h-[520px]'>
                 {/* overlay */}
                 <div className='absolute w-full h-full flex flex-col pb-16 sm:pb-8 justify-between text-gray-200 bg-gradient-to-b from-black/40 to-black/10 rounded-xl'>
                     <div className='pt-8'>

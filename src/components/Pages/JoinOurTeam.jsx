@@ -1,5 +1,4 @@
 import React from "react";
-import Team from '../../images/team.jpeg'
 import Team2 from '../../images/team2.png'
 
 // import ContactForm from "./ContactForm"; // Import the ContactForm component

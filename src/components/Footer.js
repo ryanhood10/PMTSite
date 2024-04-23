@@ -56,7 +56,7 @@ function Footer() {
                         <ul className="flex justify-between md:w-[75%] my-6">
                             <li>
                                 <Link to="/Contact">
-                                    <FontAwesomeIcon icon={faEnvelope} size="2x" />
+                                    <FontAwesomeIcon icon={faEnvelope} size="2x"  />
                                 </Link>
                             </li>
                         </ul>

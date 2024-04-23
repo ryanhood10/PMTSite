@@ -73,12 +73,19 @@ const DumpsterRentalCompany = () => {
   <h1 className="text-[#84BD00] text-xl font-bold">
     Nashville Subcontracting Services | PMT Site
   </h1>
-  <p className="text-xl">
+  <p className="text-lg">
     Founded in 2019, PMT Site is your reliable subcontracting partner 
-    in Middle Tennessee. Our experienced team is committed to 
+    in Middle Tennessee. We strive to bring you the best results, based off of our 3 principles:
+    
+
+  <br></br>
+<span className="font-bold">SITE-</span> Every site is unique and comes with its own challenges, PMT us here to attack those challenges with you.
+    <br></br>
+    <span className="font-bold">SERVICE-</span> Our experienced team is committed to 
     clear communication and delivering exceptional results on every 
     project we take on.
-  </p>
+<br></br>
+<span className="font-bold">COMPLETION-</span> We are by your side from start to finish ensuring a quality and operational product.</p>
 
   <p className="text-[#84BD00] text-lg">
     Contact us today to learn more about how we can help you with your project.
@@ -163,7 +170,15 @@ const DumpsterRentalCompany = () => {
                                 <span>Site Development and Erosion Control</span>
                             </li>
                         </ul>
+                        <Link to="/Contact">
+                        <button 
+                          className="bg-[#84BD00] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-white active:bg-[#001489] hover:bg-[#c1e867]"
+                        >
+                          Get a Free Quote
+                        </button>
+                      </Link>
                     </div>
+                    
                 </div>
             </div>
             {/* 3rd column */}

@@ -8,8 +8,8 @@ const Hero2 = () => {
                 {/* overlay */}
                 <div className='absolute w-full h-full flex flex-col pb-16 sm:pb-8 justify-between text-gray-200 bg-gradient-to-b from-black/40 to-black/10 rounded-xl'>
                     <div className='pt-8'>
-                        <h1 className='px-4 text-4xl sm:text-5xl md:text-8xl lg:8xl font-bold'>Your <span className='text-[#84BD00]'>Trusted</span></h1>
-                        <h1 className='px-4 text-4xl sm:text-5xl md:text-8xl lg:8xl font-bold'>Source for <span className='text-[#84BD00]'>Subcontracting</span></h1>
+                        <h1 className='px-4 text-4xl sm:text-5xl md:text-8xl lg:8xl font-bold'>Your <span className='text-[#001489]'>Trusted</span></h1>
+                        <h1 className='px-4 text-4xl sm:text-5xl md:text-8xl lg:8xl font-bold'>Source for <span className='text-[#001489]'>Subcontracting</span></h1>
                         <br></br>
                     </div>
                     

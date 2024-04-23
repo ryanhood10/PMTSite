@@ -36,8 +36,9 @@ const Navbar = () => {
     <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
       {/* Left side */}
       <div className="flex text-[#84BD00] items-center">
-       
-        <img src={PMTsiteLogo} alt="PMTsiteLogo" />
+        <Link to="/">
+          <img src={PMTsiteLogo} alt="PMTsiteLogo" />
+        </Link>
      
       </div>
 
@@ -91,7 +92,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="text-xl py-4 flex">
-                    <Link to="/solutions" className="flex items-center">
+                    <Link to="/services" className="flex items-center">
                       <TbTruckDelivery size={25} className="mr-4" /> Services
                     </Link>
                   </li>
@@ -105,11 +106,11 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li className="text-xl py-4 flex">
+            {/* <li className="text-xl py-4 flex">
             <Link to="/testimonials" className="flex items-center">
               <AiFillTag size={25} className="mr-4" /> Testimonials{' '}
               </Link>
-            </li>
+            </li> */}
 
              {/* Join Our Team button */}
              <li className="text-xl py-4 flex">

@@ -644,11 +644,11 @@ video {
 .max-w-\[1840px\] {
   max-width: 1840px;
 }
-.max-w-screen-xl {
-  max-width: 1280px;
-}
 .max-w-\[400px\] {
   max-width: 400px;
+}
+.max-w-screen-xl {
+  max-width: 1280px;
 }
 .translate-x-0 {
   --tw-translate-x: 0px;
@@ -705,14 +705,14 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.gap-4 {
+  gap: 1rem;
+}
 .gap-6 {
   gap: 1.5rem;
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-4 {
-  gap: 1rem;
 }
 .gap-x-10 {
   column-gap: 2.5rem;
@@ -1216,12 +1216,12 @@ video {
     min-height: 200px;
   }
 
-  .md\:w-\[75\%\] {
-    width: 75%;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-\[75\%\] {
+    width: 75%;
   }
 
   .md\:grid-cols-2 {

@@ -5,13 +5,13 @@ import stock2 from '../images/Screenshot 2024-01-26 at 1.23.22 PM.png'
 import { FaCheckCircle } from 'react-icons/fa';
 import Slider from "react-slick"; // Import the Slider component
 import Basketball from "../images/basketball.jpeg"
-import Barrels from "../images/IMG_2080.jpeg"
+import Barrels from "../images/IMG_2080.webp"
 // import Tractor from '../images/Screenshot 2024-02-10 at 1.43.36 AM.png';
 import Contractor from '../images/stockContractor-transformed.jpeg';
-import Contractor2 from '../images/stockContractor2-transformed.jpeg';
-import Team from '../images/PMTMeeting.png';
+import Contractor2 from '../images/stockContractor2-transformed.webp';
+import Team from '../images/PMTMeeting.webp';
 import { Link } from 'react-router-dom';
-import Shell1 from '../images/Shell4.png'
+import Shell1 from '../images/Shell4.webp'
 
 // carousel css
 import "slick-carousel/slick/slick.css";

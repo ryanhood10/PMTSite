@@ -43,7 +43,7 @@ function Footer() {
                 <div>
                     <h1 className='text-[#84BD00] font-bold text-4xl text-center'> Connect with us Further  </h1>
                     <p className='py-4 text-xl'>
-                        Connect with us on LinkedIn, Facebook, or send us an email at:   
+                        Send us an email at:   
                         <a href="mailto:Ceshleman@pmtsite.com" className="text-blue-500 hover:underline"> Ceshleman@pmtsite.com</a>
 
                         {/* Add phone icon and phone number */}
@@ -68,11 +68,11 @@ function Footer() {
                             Solutions
                         </Link>
                         <ul>
-                            <li className='py-2 text-sm'>Electrical Services</li>
-                            <li className='py-2 text-sm'>Plumbing and HVAC Services</li>
-                            <li className='py-2 text-sm'>Carpentry Services</li>
-                            <li className='py-2 text-sm'>Project Management</li>
                             <li className='py-2 text-sm'>General Contracting</li>
+                            <li className='py-2 text-sm'>Project Management</li>
+                            <li className='py-2 text-sm'>Plumbing and HVAC Services</li>
+                            <li className='py-2 text-sm'>Electrical Services</li>
+                            <li className='py-2 text-sm'>Carpentry Services</li>
                         </ul>
                     </div>
                 </div>

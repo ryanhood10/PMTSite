@@ -1,11 +1,13 @@
 import React, { Suspense } from 'react';
 import Navbar from './components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import LazyLoad from 'react-lazyload';
+
 const Hero = React.lazy(() => import('./components/Hero'));
 const Hero2 = React.lazy(() => import('./components/Hero2'));
+const Hero3 = React.lazy(() => import('./components/Hero3'));
 const HeadlineCards = React.lazy(() => import('./components/HeadlineCards'));
 const TestimonialsPage = React.lazy(() => import('./components/Pages/Testimonials'));
-const Favorites = React.lazy(() => import('./components/Pages/Favorites'));
 const AboutUs = React.lazy(() => import('./components/Pages/AboutUs'));
 const JoinOurTeam = React.lazy(() => import('./components/Pages/JoinOurTeam'));
 const PrivacyPolicy = React.lazy(() => import('./components/Pages/PrivacyPolicy'));
@@ -28,15 +30,22 @@ function App() {
             element={
               <Suspense fallback={<div>Loading...</div>}>
                 <React.Fragment>
-                  <Hero2 />
-                  <TNBanner />
-                  <Engagement />
-                  <HeadlineCards />
+                  <LazyLoad height={200} offset={100}>
+                    <Hero3 />
+                  </LazyLoad>
+                  <LazyLoad height={200} offset={100}>
+                    <TNBanner />
+                  </LazyLoad>
+                  <LazyLoad height={200} offset={100}>
+                    <Engagement />
+                  </LazyLoad>
+                  <LazyLoad height={200} offset={100}>
+                    <HeadlineCards />
+                  </LazyLoad>
                 </React.Fragment>
               </Suspense>
             }
           />
-          
           <Route
             path="/testimonials"
             element={
@@ -59,57 +68,53 @@ function App() {
               </Suspense>
             }
           />
-
-
-     <Route
+          <Route
             path="/JoinOurTeam"
             element={
               <Suspense fallback={<div>Loading...</div>}>
                 <React.Fragment>
-                <Hero />
+                  <Hero />
                   <JoinOurTeam />
                   <NewsLetter />
                 </React.Fragment>
               </Suspense>
             }
           />
-
-<Route
+          <Route
             path="/NuestroEquipo"
             element={
               <Suspense fallback={<div>Loading...</div>}>
                 <React.Fragment>
-                <Hero />
+                  <Hero />
                   <NuestroEquipo />
                   <NewsLetter />
                 </React.Fragment>
               </Suspense>
             }
           />
-
-          <Route path="/AboutUs" element={
-                        <Suspense fallback={<div>Loading...</div>}>
-                                          <React.Fragment>
-
-          <AboutUs />
-          <NewsLetter2 />
-          </React.Fragment>
-
-          </Suspense>
-          } /> 
-
-<Route
-            path="/Contact"
+          <Route
+            path="/AboutUs"
             element={
               <Suspense fallback={<div>Loading...</div>}>
                 <React.Fragment>
-                <Hero />
+                  <AboutUs />
                   <NewsLetter2 />
                 </React.Fragment>
               </Suspense>
             }
           />
-          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} /> 
+          <Route
+            path="/Contact"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <React.Fragment>
+                  <Hero />
+                  <NewsLetter2 />
+                </React.Fragment>
+              </Suspense>
+            }
+          />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         </Routes>
         <Suspense fallback={<div>Loading...</div>}>
           <Footer />

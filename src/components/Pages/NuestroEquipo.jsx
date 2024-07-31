@@ -21,7 +21,7 @@ const NuestroEquipo = () => {
             </div>
 
             <div className="max-w-[1240px] mx-auto flex pt-8 pb-2 space-x-8">
-            <img src={Equipo2} alt="photo-de-equipo" className="h-64 rounded-3xl"></img>
+            <img src={Equipo2} alt="nuestro-equipo" className="h-64 rounded-3xl"></img>
                 <div>
                     <h2 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">
                         ¿Por qué Elegir PMT Site?

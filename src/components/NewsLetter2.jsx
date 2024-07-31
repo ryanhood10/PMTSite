@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from 'axios';
 import { validateEmail } from '../utils/validators';
-import { Link } from "react-router-dom";
 
 function useVisible(initialVisibility = false) {
     const [isVisible, setIsVisible] = useState(initialVisibility);

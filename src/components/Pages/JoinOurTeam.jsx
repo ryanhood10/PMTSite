@@ -12,7 +12,7 @@ const JoinOurTeam = () => {
                     <p>
                         Are you looking for a rewarding career in the contracting industry?
                         <br/>
-                         PMT Site offers exciting opportunities for middle tennessee individuals who are passionate about construction and dedicated to excellence.
+                         PMT Site offers exciting opportunities for Middle Tennessee individuals who are passionate about construction and dedicated to excellence.
                          <br/>
                          <br/>
                           Join us in building a brighter future in Nashville!
@@ -21,7 +21,7 @@ const JoinOurTeam = () => {
             </div>
 
             <div className="max-w-[1240px] mx-auto flex pt-8 pb-2 space-x-8">
-            <img src={Team2} className="h-64 rounded-3xl"></img>
+            <img src={Team2} alt='our-team' className="h-64 rounded-3xl"></img>
                 <div>
                     <h2 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">
                         Why Choose PMT Site?

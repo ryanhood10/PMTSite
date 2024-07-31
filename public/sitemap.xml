@@ -5,7 +5,7 @@ const { routes } = require('./your-routes-file'); // Import your app's routes
 const App = require('./your-main-react-component'); // Import your main React component
 
 const generateSitemap = () => {
-  const baseUrl = 'https://pmt-site-nashville.web.app/'; // Replace with your website URL
+  const baseUrl = 'https://pmtsite.com/'; // Replace with your website URL
   const sitemapEntries = [];
 
   routes.forEach((route) => {

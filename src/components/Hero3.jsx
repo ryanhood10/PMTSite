@@ -26,7 +26,7 @@ const Hero3 = () => {
       <div className="absolute inset-0 bg-black opacity-25"></div>
 
       {/* Text Container */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full p-4 text-center font-bold">
+      <div className="relative z-9 flex flex-col items-center justify-center h-full p-4 text-center font-bold">
   <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold">
     Streamline Your Construction Projects
     <br />

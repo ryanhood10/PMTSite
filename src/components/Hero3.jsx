@@ -6,7 +6,7 @@ const Hero3 = () => {
   const navigate = useNavigate();
 
   const handleViewContact = () => {
-    navigate("/connect");
+    navigate("/Contact");
   };
 
   return (

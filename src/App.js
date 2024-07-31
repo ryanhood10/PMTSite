@@ -1,23 +1,22 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import LazyLoad from 'react-lazyload';
 
-const Hero = React.lazy(() => import('./components/Hero'));
-const Hero2 = React.lazy(() => import('./components/Hero2'));
-const Hero3 = React.lazy(() => import('./components/Hero3'));
-const HeadlineCards = React.lazy(() => import('./components/HeadlineCards'));
-const TestimonialsPage = React.lazy(() => import('./components/Pages/Testimonials'));
-const AboutUs = React.lazy(() => import('./components/Pages/AboutUs'));
-const JoinOurTeam = React.lazy(() => import('./components/Pages/JoinOurTeam'));
-const PrivacyPolicy = React.lazy(() => import('./components/Pages/PrivacyPolicy'));
-const Engagement = React.lazy(() => import('./components/Engagement'));
-const Footer = React.lazy(() => import('./components/Footer'));
-const TNBanner = React.lazy(() => import('./components/TNBanner'));
-const NewsLetter = React.lazy(() => import('./components/NewsLetter'));
-const NewsLetter2 = React.lazy(() => import('./components/NewsLetter2'));
-const NuestroEquipo = React.lazy(() => import('./components/Pages/NuestroEquipo'));
-const ServicesPage = React.lazy(() => import('./components/Pages/Services'));
+import Hero from './components/Hero';
+import Hero2 from './components/Hero2';
+import Hero3 from './components/Hero3';
+import HeadlineCards from './components/HeadlineCards';
+import TestimonialsPage from './components/Pages/Testimonials';
+import AboutUs from './components/Pages/AboutUs';
+import JoinOurTeam from './components/Pages/JoinOurTeam';
+import PrivacyPolicy from './components/Pages/PrivacyPolicy';
+import Engagement from './components/Engagement';
+import Footer from './components/Footer';
+import TNBanner from './components/TNBanner';
+import NewsLetter from './components/NewsLetter';
+import NewsLetter2 from './components/NewsLetter2';
+import NuestroEquipo from './components/Pages/NuestroEquipo';
+import ServicesPage from './components/Pages/Services';
 
 function App() {
   return (
@@ -28,97 +27,73 @@ function App() {
           <Route
             path="/"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <React.Fragment>
-                  <LazyLoad height={200} offset={100}>
-                    <Hero3 />
-                  </LazyLoad>
-                  <LazyLoad height={200} offset={100}>
-                    <TNBanner />
-                  </LazyLoad>
-                  <LazyLoad height={200} offset={100}>
-                    <Engagement />
-                  </LazyLoad>
-                  <LazyLoad height={200} offset={100}>
-                    <HeadlineCards />
-                  </LazyLoad>
-                </React.Fragment>
-              </Suspense>
+              <React.Fragment>
+                <Hero3 />
+                <TNBanner />
+                <Engagement />
+                <HeadlineCards />
+              </React.Fragment>
             }
           />
           <Route
             path="/testimonials"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <React.Fragment>
-                  <TestimonialsPage />
-                  <Hero />
-                </React.Fragment>
-              </Suspense>
+              <React.Fragment>
+                <TestimonialsPage />
+                <Hero />
+              </React.Fragment>
             }
           />
           <Route
             path="/services"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <React.Fragment>
-                  <ServicesPage />
-                  <Hero />
-                </React.Fragment>
-              </Suspense>
+              <React.Fragment>
+                <ServicesPage />
+                <Hero />
+              </React.Fragment>
             }
           />
           <Route
             path="/JoinOurTeam"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <React.Fragment>
-                  <Hero />
-                  <JoinOurTeam />
-                  <NewsLetter />
-                </React.Fragment>
-              </Suspense>
+              <React.Fragment>
+                <Hero />
+                <JoinOurTeam />
+                <NewsLetter />
+              </React.Fragment>
             }
           />
           <Route
             path="/NuestroEquipo"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <React.Fragment>
-                  <Hero />
-                  <NuestroEquipo />
-                  <NewsLetter />
-                </React.Fragment>
-              </Suspense>
+              <React.Fragment>
+                <Hero />
+                <NuestroEquipo />
+                <NewsLetter />
+              </React.Fragment>
             }
           />
           <Route
             path="/AboutUs"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <React.Fragment>
-                  <AboutUs />
-                  <NewsLetter2 />
-                </React.Fragment>
-              </Suspense>
+              <React.Fragment>
+                <AboutUs />
+                <NewsLetter2 />
+              </React.Fragment>
             }
           />
           <Route
             path="/Contact"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <React.Fragment>
-                  <Hero />
-                  <NewsLetter2 />
-                </React.Fragment>
-              </Suspense>
+              <React.Fragment>
+                <Hero />
+                <NewsLetter2 />
+              </React.Fragment>
             }
           />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         </Routes>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Footer />
-        </Suspense>
+        <Footer />
       </BrowserRouter>
     </div>
   );

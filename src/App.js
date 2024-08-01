@@ -3,7 +3,9 @@ import Navbar from './components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Hero from './components/Hero';
-import Hero2 from './components/Hero2';
+import Hero4 from './components/Hero4';
+import Hero5 from './components/Hero5';
+import Hero6 from './components/Hero6';
 import Hero3 from './components/Hero3';
 import HeadlineCards from './components/HeadlineCards';
 import TestimonialsPage from './components/Pages/Testimonials';
@@ -39,6 +41,7 @@ function App() {
             path="/testimonials"
             element={
               <React.Fragment>
+              <Hero4 />
                 <TestimonialsPage />
                 <Hero />
               </React.Fragment>
@@ -48,6 +51,7 @@ function App() {
             path="/services"
             element={
               <React.Fragment>
+                              <Hero4 />
                 <ServicesPage />
                 <Hero />
               </React.Fragment>
@@ -57,7 +61,7 @@ function App() {
             path="/JoinOurTeam"
             element={
               <React.Fragment>
-                <Hero />
+              <Hero6 />
                 <JoinOurTeam />
                 <NewsLetter />
               </React.Fragment>
@@ -67,7 +71,7 @@ function App() {
             path="/NuestroEquipo"
             element={
               <React.Fragment>
-                <Hero />
+              <Hero6 />
                 <NuestroEquipo />
                 <NewsLetter />
               </React.Fragment>
@@ -77,6 +81,7 @@ function App() {
             path="/AboutUs"
             element={
               <React.Fragment>
+              <Hero5 />
                 <AboutUs />
                 <NewsLetter2 />
               </React.Fragment>

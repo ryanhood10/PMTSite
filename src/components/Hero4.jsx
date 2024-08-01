@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from '../PMTphotos/PMTfooter.png';
+import backgroundImage from '../PMTphotos/subcontractorStock-transformed.png';
 
 const Hero4 = () => {
 
@@ -23,7 +23,7 @@ const Hero4 = () => {
       {/* Text Container */}
       <div className="relative z-9 flex flex-col items-center justify-center h-full p-4 text-center font-bold">
   <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold">
-Contact Us
+    Our Services
     <br />
   </h2>
   <hr className="border-t-2 border-gray-300 w-3/4 my-4" />

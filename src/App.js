@@ -53,7 +53,6 @@ function App() {
               <React.Fragment>
                               <Hero4 />
                 <ServicesPage />
-                <Hero />
               </React.Fragment>
             }
           />

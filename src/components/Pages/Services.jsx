@@ -47,14 +47,13 @@ const ServicesPage = () => {
             ))}
           </ul>
         </div>
-        <div className="w-full md:w-1/2 flex justify-center items-center">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="w-full md:w-1/3 flex justify-center items-center">
+          <div className="">
             <img
               className="w-full rounded-3xl object-cover"
               src={houseIcon}
               alt="House foundation construction"
             />
-            <img className="w-full rounded-3xl object-cover" src={shovelIcon} alt="Excavation work" />
           </div>
         </div>
       </div>

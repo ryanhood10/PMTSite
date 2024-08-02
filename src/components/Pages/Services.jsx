@@ -1,7 +1,6 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import houseIcon from "../../images/IMG_1465.jpeg";
-import shovelIcon from "../../images/IMG_1860.jpeg";
+import houseIcon from "../../images/bulldozer.webp";
 
 const ServicesPage = () => {
   const services = [

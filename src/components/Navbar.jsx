@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { AiFillTag, AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { TbTruckDelivery } from 'react-icons/tb';
-import { FaHome, FaBriefcase } from 'react-icons/fa';
+import { FaHome, FaBriefcase, FaUsers, FaEnvelope } from 'react-icons/fa';
 import { MdHelp } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import PMTsiteLogo from '../PMTphotos/PMTsiteLogo.png';
 import TDOTBanner from '../images/TDOT Banner.png';
-import { FaCheckCircle, FaUser } from 'react-icons/fa';
+import { FaCheckCircle } from 'react-icons/fa';
 
 import {
   FacebookShareButton,
@@ -89,33 +89,33 @@ const Navbar = () => {
         <nav>
           <ul className="flex flex-col p-4 text-gray-800">
             <li className="text-xl py-4 flex">
-              <Link to="/" className="flex items-center">
+              <Link to="/" className="flex items-center" onClick={() => setNav(false)}>
                 <FaHome size={25} className="mr-4" /> Home
               </Link>
             </li>
             <li className="text-xl py-4 flex">
-              <Link to="/services" className="flex items-center">
+              <Link to="/services" className="flex items-center" onClick={() => setNav(false)}>
                 <TbTruckDelivery size={25} className="mr-4" /> Services
               </Link>
             </li>
             <li className="text-xl py-4 flex">
-              <Link to="/AboutUs" className="flex items-center">
+              <Link to="/AboutUs" className="flex items-center" onClick={() => setNav(false)}>
                 <MdHelp size={25} className="mr-4" /> About Us
               </Link>
             </li>
             <li className="text-xl py-4 flex">
-              <Link to="/JoinOurTeam" className="flex items-center">
-                <FaUser size={25} className="mr-4" /> Join Our Team
+              <Link to="/JoinOurTeam" className="flex items-center" onClick={() => setNav(false)}>
+                <FaBriefcase size={25} className="mr-4" /> Join Our Team
               </Link>
             </li>
             <li className="text-xl py-4 flex">
-              <Link to="/NuestroEquipo" className="flex items-center">
-                <FaUser size={25} className="mr-4" /> Nuestro Equipo
+              <Link to="/NuestroEquipo" className="flex items-center" onClick={() => setNav(false)}>
+                <FaUsers size={25} className="mr-4" /> Nuestro Equipo
               </Link>
             </li>
             <li className="text-xl py-4 flex">
-              <Link to="/Contact" className="flex items-center">
-                <FaBriefcase size={25} className="mr-4" /> Contact Us
+              <Link to="/Contact" className="flex items-center" onClick={() => setNav(false)}>
+                <FaEnvelope size={25} className="mr-4" /> Contact Us
               </Link>
             </li>
             <li className="text-xl py-4 flex flex-col">
@@ -140,7 +140,7 @@ const Navbar = () => {
             <div className="w-full flex lg:hidden p-4 relative">
               <div className="absolute inset-0 text-black rounded-2xl flex flex-col justify-center">
                 <div className="flex justify-end pl-10">
-                <div className="text-[#001489] py-8 pb-16 px-4 text-md w-2/3 space-y-2">
+                  <div className="text-[#001489] py-8 pb-16 px-4 text-md w-2/3 space-y-2">
                     <div className="flex items-end">
                       <FaCheckCircle className="mr-2 text-4xl" />
                       <h1 className="px-4 font-bold">Registered TDOT Contractor</h1>
